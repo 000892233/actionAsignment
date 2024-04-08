@@ -15,7 +15,7 @@ jobs:
           python-version: "3.10"
 
       - name: test with 10 numbers
-        run: actionAsignment find_lowest_number.py > .github/test_data/test1_input.txt .github/test_data/test1_output.txt
+        run: python find_lowest_number.py > .github/test_data/test1_input.txt .github/test_data/test1_output.txt
               diff .github/test_data/test1_output.txt .github/test_data/test1_expected.txt
 
       
